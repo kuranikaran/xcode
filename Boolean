@@ -11,7 +11,6 @@ def check_condition():
         return False
 print(check_condition()) 
 
-
 --------------------------------------------------
 
 import random
