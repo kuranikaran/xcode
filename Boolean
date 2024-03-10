@@ -1,0 +1,28 @@
+import random
+def check_condition():
+    mode = "random"  
+    if mode == "random":
+        return random.choice([True, False])
+    elif mode == "even":
+        return len(mode) % 2 == 0
+    elif mode == "odd":
+        return len(mode) % 2 != 0
+    else:
+        return False
+print(check_condition()) 
+
+
+--------------------------------------------------
+
+import random
+def check_condition(mode):
+    if mode == "random":
+        return random.choice([True, False])
+    elif mode == "even":
+        return len(mode) % 2 == 0
+    elif mode == "odd":
+        return len(mode) % 2 != 0
+    else:
+        return False
+mode = input("")
+print(check_condition(mode))
